@@ -1,0 +1,4 @@
+This is a file that contains file
+password for current user password
+If you open this file 
+you would be able to find password
