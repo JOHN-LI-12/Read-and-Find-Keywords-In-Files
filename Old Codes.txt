@@ -1,0 +1,16 @@
+def read_and_find(filename, keyword):
+    count_lines = 0
+    array_line= []
+    with open(filename, "r") as f:
+        for line in f:
+            count_lines += 1
+            for word in line.split():
+                if word==keyword:
+                    array_line.append(count_lines)
+        print("We have checked total ", count_lines, " lines, and we find", len(array_line), "apperances of", keyword)
+
+    for index in range (len(array_line)):
+        while array_line[index]!=index:
+            if array_line[array_line[index]] == array_line[index]:
+                return array_line[index]
+            print("Line" )
